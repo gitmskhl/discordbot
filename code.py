@@ -48,12 +48,12 @@ for i in range(100):
 			if count > 1:
 				sendMessage(chat_id, 'Хватит так много отправлять сообщений! Я не успеваю их обрабатывать!')
 			else:
-                try:
-                    reply = hd(query)
-				    if reply is not None and reply != '':
-				    	sendMessage(chat_id, reply)
-		        except:
-                    sendMessage(chat_id, 'Something went wrong...')
+            	try:
+                	reply = hd(query)
+					if reply is not None and reply != '':
+				   		sendMessage(chat_id, reply)
+		    	except:
+                	sendMessage(chat_id, 'Something went wrong...')
 
 			
 	time.sleep(1)
